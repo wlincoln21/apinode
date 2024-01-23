@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.background-layer::before {
+    content: '';
+    /* background-color: #000; */
+    /* background-image: url('https://images.unsplash.com/photo-1536520002442-39764a41e987?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+    background-image: url('https://www.fashionbubbles.com/wp-content/uploads/2022/08/sala-de-massagem.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    z-index: -1;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    border-radius: 20px;
+
+}
+
+.login-container h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-login {
+    width: 100px;
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--color-seconday);
+}
+
+.register {
+    margin-top: 20px;
+}
+
+.register p {
+    margin-bottom: 10px;
+}
+
+.register a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: var(--color-seconday);
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.btnGoogle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnGoogle:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+
+.btnGoogle img {
+    width: 36px;
+}
+
+.btnGoogle span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .login-container {
+        width: 50vw;
+    }
+
+    .login-container h2 {
+        font-size: 2rem;
+    }
+
+    .logo-login {
+        width: 100px;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    .form button {
+        padding: 15px 0px;
+        font-size: 1.6rem;
+    }
+
+    .btnGoogle {
+        padding: 30px 0px;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .register span {
+        font-size: 1.4rem;
+    }
+
+    .input-value-login {
+        height: 50px;
+    }
+
+    .rem {
+        font-size: 1.5rem;
+    }
+
+
+}
